@@ -1,16 +1,171 @@
-<html>
-    <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+<!DOCTYPE html>
 
-        <button onclick="compute()">Compute</button>
-    </body>
+<html lang="en">
+
+  <head>
+
+  
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Simple interest calculator</title>
+
+    <link rel="stylesheet" type="text/css" href="Calc.css">
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+
+	
+
+	
+
+ 
+
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+ <script src="Calc.js"></script>
+
+  </head>
+
+  <body>
+
+
+
+<div class="interbox">
+
+<div id="whitebox"><p id="title">Simple Interest Calculator</p></div>
+
+<form id="thisform">
+
+  <div>
+
+<div class="left">
+
+  <ul>
+
+  <li>Select currency:</li>
+
+  <li>Principal amount:</li>
+
+  <li>Annual interest rate:</li>
+
+    <li>Period:</li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+
+<li></li>
+
+
+
+ <div id="pushdown">
+
+  <li>Interest amount:</li>
+
+  <li>Total amount:</li>
+
+</div>
+
+  </ul>
+
+</div>
+
+
+
+
+
+<div class="right">
+
+  <ul>
+
+    <li><select id="moneychange" name="curr">
+
+      <option value="($)">Dollar($)</option>
+
+      <option value="(£)">Pound(£)</option>
+
+      <option value="(€)">Euro(€)</option>
+
+      <option value="Kr">Krona(kr)</option>
+
+      <option  value="L">Leu(L)</option>
+
+      <option value="T">Lira(T)</option>
+
+      <option value="P">Peso(P)</option>
+
+      <option value="RM">Ringgit (RM)</option>
+
+      <option value="R">Rupee (R)</option>
+
+      <option value="Rs">Rupee (Rs)</option>
+
+      <option value="(₪)">Shekel (₪)</option>
+
+      <option value="Zl">Zloty (zl)</option>
+
+      <option value="">- other -</option>
+
+       </select></li>
+
+    <li><div><input type="number" id="Principal" class="textboxsize" /> <button   class="btn btn-secondary btn-outline-secondary" type="button" id="clearthetext">X</button></div></li>
+
+    <li> <input type="number" id="rate" class="textboxsize" /></li>
+
+    <li><input type="number" id="Peroid" class="textboxsize" />
+
+    <select id="time">
+
+            <option value="Days">Days</option>
+
+            <option value="Weeks">Weeks</option>
+
+            <option value="Months">Months</option>
+
+            <option value="Quarters">Quarters</option>
+
+            <option value="Years"selected="selected">Years</option>
+
+          </select></li>
+
+        <li id="thebuttons"><button id="inamount"  class="btn btn-secondary" type="button">Calculate</button><button id="clearAll"  class="btn btn-secondary btn-outline-secondary"type="button">Clear</button></li>
+
+      <li><input id="thetextInA" type="number" class="textboxsize" /></li>
+
+      <li><input  id="tamount" type="number"   class="textboxsize" /></li>
+
+  </ul>
+
+
+
+
+
+</div>
+
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+  </body>
+
 </html>
